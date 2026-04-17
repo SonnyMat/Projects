@@ -1,4 +1,4 @@
-# ☁️ Azure Cloud – Sprawozdanie z Laboratoriów (Pd5206)
+# ☁️ Azure Cloud – Sprawozdanie z Laboratoriów 
 
 > Projekt dokumentuje praktyczne ćwiczenia z platformy **Microsoft Azure**: tworzenie maszyn wirtualnych, konfigurację sieci wirtualnych, zarządzanie grupami zabezpieczeń (NSG) oraz konfigurację zapory sieciowej (Azure Firewall).
 
