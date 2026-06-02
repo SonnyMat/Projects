@@ -3,4 +3,4 @@
 2. DVWA - Reverse Shell i Eskalacja Uprawnień
 3. DVWA - SQL Injection
 4. Exploit z zabezpieczeniami
-
+5. Microsfot Entra ID 
