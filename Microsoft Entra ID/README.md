@@ -16,16 +16,16 @@ Projekt skierowany jest do rekruterów i osób technicznych, które chcą oceni�
 
 ## 🗂️ Zawartość projektu
 
-| Moduł | Temat | Poziom |
+| Moduł | Temat |
 |---|---|---|
-| 01 | Konfiguracja tenanta Entra ID | ⚪ Podstawowy |
-| 02 | Zarządzanie użytkownikami i grupami (w tym Dynamic Groups) | ⚪ Podstawowy |
-| 03 | Role i administracja – RBAC + Custom Roles | 🔵 Średni |
-| 04 | Multi-Factor Authentication (MFA) + SSPR | 🔵 Średni |
-| 05 | Conditional Access – polityki Zero Trust | 🔴 Zaawansowany |
-| 06 | Rejestracja aplikacji – OAuth2 / OIDC / JWT | 🔴 Zaawansowany |
-| 07 | Monitoring – Sign-in Logs, Audit Logs, Log Analytics + KQL | 🔵 Średni |
-| 08 | Privileged Identity Management (PIM) – Just-in-Time Access | 🔴 Zaawansowany |
+| 01 | Konfiguracja tenanta Entra ID | 
+| 02 | Zarządzanie użytkownikami i grupami (w tym Dynamic Groups) | 
+| 03 | Role i administracja – RBAC + Custom Roles | 
+| 04 | Multi-Factor Authentication (MFA) + SSPR | 
+| 05 | Conditional Access – polityki Zero Trust | 
+| 06 | Rejestracja aplikacji – OAuth2 / OIDC / JWT | 
+| 07 | Monitoring – Sign-in Logs, Audit Logs, Log Analytics + KQL | 
+| 08 | Privileged Identity Management (PIM) – Just-in-Time Access | 
 
 ---
 
