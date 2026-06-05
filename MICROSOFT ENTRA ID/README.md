@@ -22,27 +22,21 @@ Celem była demonstracja praktycznych umiejętności z zakresu **Identity & Acce
 /
 ├── README.md
 └── screenshots/
-    ├── module1-tenant/
-    ├── module2-users/
-    ├── module3-bulk-guest/
-    ├── module4-groups/
-    ├── module5-app-registration/
-    ├── module6-mfa-auth/
-    ├── module7-roles/
-    └── module8-monitoring/
+    ├── 1.png
+    ├── 2.png
+    ├── 3.png
+    └── ... (1–48)
 ```
 
 ---
 
 ## 📦 Moduł I – Tworzenie i konfiguracja dzierżawcy (Tenant)
 
-> **Screenshoty:** `screenshots/module1-tenant/`
-
 ### Krok 1 – Przegląd istniejącego środowiska
 
 Zapoznałam się ze strukturą domyślnego katalogu (`Katalog domyślny`) powiązanego z kontem `sonia121999@gmail.com`.
 
-![Katalog domyślny – przegląd](screenshots/module1-tenant/01_katalog_domyslny_overview.png)
+![Katalog domyślny – przegląd](screenshots/1.png)
 
 | Pole | Wartość |
 |---|---|
@@ -57,7 +51,7 @@ Zidentyfikowałam alert dotyczący konieczności migracji do ujednoliconej polit
 
 ### Krok 2 – Przegląd listy tenantów
 
-![Manage Tenants](screenshots/module1-tenant/02_manage_tenants.png)
+![Manage Tenants](screenshots/2.png)
 
 Potwierdziłam, że w środowisku istnieje jeden dzierżawca (Katalog domyślny, typ Workforce).
 
@@ -65,7 +59,7 @@ Potwierdziłam, że w środowisku istnieje jeden dzierżawca (Katalog domyślny,
 
 ### Krok 3 – Wybór konfiguracji nowego dzierżawcy
 
-![Wybór konfiguracji tenanta](screenshots/module1-tenant/03_choose_tenant_type.png)
+![Wybór konfiguracji tenanta](screenshots/6.png)
 
 Na ekranie wyboru wybrałam typ **External** (zamiast Workforce legacy lub Governed Workforce Preview), ponieważ umożliwia on budowanie środowiska B2C/B2B bez wymagania płatnej subskrypcji.
 
@@ -73,8 +67,8 @@ Na ekranie wyboru wybrałam typ **External** (zamiast Workforce legacy lub Gover
 
 ### Krok 4 – Uzupełnienie danych i utworzenie dzierżawcy
 
-![Formularz tworzenia tenanta](screenshots/module1-tenant/04_create_tenant_basics.png)
-![Podsumowanie i walidacja](screenshots/module1-tenant/05_create_tenant_review.png)
+![Formularz tworzenia tenanta](screenshots/3.png)
+![Podsumowanie i walidacja](screenshots/5.png)
 
 | Pole | Wartość |
 |---|---|
@@ -90,7 +84,7 @@ Walidacja przebiegła pomyślnie (`Validation passed`). Potwierdziłam utworzeni
 
 ### Krok 5 – Nowy tenant aktywny
 
-![Nowy tenant – strona główna](screenshots/module1-tenant/06_new_tenant_home.png)
+![Nowy tenant – strona główna](screenshots/4.png)
 
 Po przełączeniu kontekstu widziałam panel **Microsoft Entra External ID** z opcjami integracji aplikacji.
 
@@ -98,11 +92,9 @@ Po przełączeniu kontekstu widziałam panel **Microsoft Entra External ID** z o
 
 ## 👤 Moduł II – Zarządzanie użytkownikami (ręczne tworzenie)
 
-> **Screenshoty:** `screenshots/module2-users/`
-
 ### Krok 1 – Stan początkowy: jeden użytkownik
 
-![Lista użytkowników – stan początkowy](screenshots/module2-users/07_users_initial_state.png)
+![Lista użytkowników – stan początkowy](screenshots/7.png)
 
 Po przejściu do sekcji **Użytkownicy** w nowym tenancie widniał tylko właściciel konta (Sonia Paszkowiak, tożsamość MicrosoftAccount).
 
@@ -112,13 +104,13 @@ Po przejściu do sekcji **Użytkownicy** w nowym tenancie widniał tylko właśc
 
 Dla każdego użytkownika uzupełniałam dane na zakładkach: Podstawowe informacje, Właściwości, Przypisania.
 
-![Formularz nowego użytkownika – Jan Kowalski](screenshots/module2-users/08_create_user_jan_kowalski.png)
-![Przegląd – Jan Kowalski](screenshots/module2-users/09_review_jan_kowalski.png)
-![Przegląd – admin.helpdesk](screenshots/module2-users/10_review_admin_helpdesk.png)
-![Przegląd – manager.it](screenshots/module2-users/11_review_manager_it.png) *(screenshot 12)*
-![Przegląd – Anna Nowak](screenshots/module2-users/12_review_anna_nowak.png) *(screenshot 13)*
-![Przegląd – Patrycja Pietruszka](screenshots/module2-users/13_review_patrycja_pietruszka.png) *(screenshot 15)*
-![Przegląd – svc.app](screenshots/module2-users/14_review_svc_app.png) *(screenshot 14)*
+![Formularz nowego użytkownika – Jan Kowalski](screenshots/8.png)
+![Przegląd – Jan Kowalski](screenshots/9.png)
+![Przegląd – admin.helpdesk](screenshots/10.png)
+![Przegląd – manager.it](screenshots/12.png)
+![Przegląd – Anna Nowak](screenshots/13.png)
+![Przegląd – Patrycja Pietruszka](screenshots/15.png)
+![Przegląd – svc.app](screenshots/14.png)
 
 | Użytkownik | UPN | Stanowisko | Dział | Rola Entra |
 |---|---|---|---|---|
@@ -135,23 +127,21 @@ Konto `svc.app` zostało zaprojektowane jako **service account** – przeznaczon
 
 ### Krok 3 – Lista 7 użytkowników
 
-![Finalna lista 7 użytkowników](screenshots/module2-users/15_users_list_7.png) *(screenshot 11)*
+![Finalna lista 7 użytkowników](screenshots/11.png)
 
 ---
 
 ## 📥 Moduł III – Import zbiorczy i zaproszenia gości
 
-> **Screenshoty:** `screenshots/module3-bulk-guest/`
-
 ### Krok 1 – Bulk Import przez plik CSV
 
 Zamiast tworzyć kolejnych użytkowników ręcznie, skorzystałam z funkcji **Operacje zbiorcze → Utwórz użytkowników**. Pobrałam szablon CSV, wypełniłam go danymi i przesłałam.
 
-![Przesyłanie pliku CSV](screenshots/module3-bulk-guest/16_bulk_import_upload.png) *(screenshot 16)*
+![Przesyłanie pliku CSV](screenshots/16.png)
 
 W widoku **Operacje zbiorcze** widoczna jest historia operacji:
 
-![Historia operacji zbiorczych](screenshots/module3-bulk-guest/17_bulk_operations_history.png) *(screenshot 17)*
+![Historia operacji zbiorczych](screenshots/17.png)
 
 | Plik | Data | Status |
 |---|---|---|
@@ -161,9 +151,11 @@ W widoku **Operacje zbiorcze** widoczna jest historia operacji:
 
 Pierwsze dwie próby zakończyły się błędem (błąd w formacie CSV). Po poprawieniu pliku operacja zakończyła się sukcesem – to realistyczny scenariusz diagnostyki w pracy administratora.
 
+---
+
 ### Krok 2 – Lista 13 użytkowników po imporcie
 
-![Lista 13 użytkowników po bulk import](screenshots/module3-bulk-guest/18_users_list_13.png) *(screenshot 19)*
+![Lista 13 użytkowników po bulk import](screenshots/19.png)
 
 Nowi użytkownicy dodani przez import: Agnieszka Wrobel, Karolina Wojcik, Marek Zielinski, Michal Kaminski, Natalia Dabrowska, Tomasz Lewandowski.
 
@@ -173,7 +165,7 @@ Nowi użytkownicy dodani przez import: Agnieszka Wrobel, Karolina Wojcik, Marek 
 
 Skorzystałam z funkcji **Zaproś użytkownika zewnętrznego**, aby dodać osobę spoza organizacji jako gościa (B2B).
 
-![Formularz zaproszenia gościa](screenshots/module3-bulk-guest/19_invite_guest_review.png) *(screenshot 20)*
+![Formularz zaproszenia gościa](screenshots/20.png)
 
 | Pole | Wartość |
 |---|---|
@@ -183,15 +175,19 @@ Skorzystałam z funkcji **Zaproś użytkownika zewnętrznego**, aby dodać osob�
 | Lokalizacja | Polska |
 | Wiadomość | „Zapraszam." |
 
+---
+
 ### Krok 4 – E-mail z zaproszeniem
 
-![E-mail z zaproszeniem](screenshots/module3-bulk-guest/20_invitation_email.png) *(screenshot 21)*
+![E-mail z zaproszeniem](screenshots/21.png)
 
 Zaproszony użytkownik otrzymał wiadomość od `MSSecurity-noreply@microsoft.com` z linkiem `Accept invitation`.
 
+---
+
 ### Krok 5 – Konto gościa po akceptacji
 
-![Konto gościa na liście](screenshots/module3-bulk-guest/21_guest_user_in_list.png) *(screenshot 22)*
+![Konto gościa na liście](screenshots/22.png)
 
 Po akceptacji zaproszenia konto pojawiło się z typem **Gość**, tożsamością **MicrosoftAccount** i typem utworzenia **Zaproszenie**.
 
@@ -199,11 +195,9 @@ Po akceptacji zaproszenia konto pojawiło się z typem **Gość**, tożsamości�
 
 ## 👥 Moduł IV – Grupy zabezpieczeń
 
-> **Screenshoty:** `screenshots/module4-groups/`
-
 ### Krok 1 – Tworzenie grupy SEC-IT-Admins
 
-![Formularz nowej grupy](screenshots/module4-groups/22_new_group_sec_it_admins.png) *(screenshot 23)*
+![Formularz nowej grupy](screenshots/23.png)
 
 | Pole | Wartość |
 |---|---|
@@ -216,22 +210,22 @@ Po akceptacji zaproszenia konto pojawiło się z typem **Gość**, tożsamości�
 
 ### Krok 2 – Wszystkie grupy (4 grupy)
 
-![Lista wszystkich grup](screenshots/module4-groups/23_all_groups_4.png) *(screenshot 44)*
+![Lista wszystkich grup](screenshots/44.png)
 
 Ostatecznie w tenancie powstały 4 grupy zabezpieczeń:
 
-| Nazwa grupy | Typ | Przeznaczenie |
-|---|---|---|
-| SEC-Finance-Team | Zabezpieczenia | Zespół finansów |
-| SEC-HR-Team | Zabezpieczenia | Zespół HR |
-| SEC-IT-Admins | Zabezpieczenia | Administratorzy IT |
-| SEC-IT-Team | Zabezpieczenia | Zespół IT |
+| Nazwa grupy | Przeznaczenie |
+|---|---|
+| SEC-Finance-Team | Zespół finansów |
+| SEC-HR-Team | Zespół HR |
+| SEC-IT-Admins | Administratorzy IT |
+| SEC-IT-Team | Zespół IT |
 
 ---
 
 ### Krok 3 – Szczegóły grupy SEC-IT-Admins
 
-![Szczegóły grupy SEC-IT-Admins](screenshots/module4-groups/24_group_sec_it_admins_details.png) *(screenshot 45)*
+![Szczegóły grupy SEC-IT-Admins](screenshots/45.png)
 
 Grupa zawiera **2 użytkowników**, źródło: Chmura, typ członkostwa: Przypisane. Data utworzenia: 3.06.2026.
 
@@ -239,12 +233,10 @@ Grupa zawiera **2 użytkowników**, źródło: Chmura, typ członkostwa: Przypis
 
 ## 🖥️ Moduł V – Rejestracja aplikacji (App Registration)
 
-> **Screenshoty:** `screenshots/module5-app-registration/`
-
 ### Krok 1 – Formularz rejestracji
 
-![Formularz rejestracji aplikacji – pusty](screenshots/module5-app-registration/25_app_registration_form_empty.png) *(screenshot 35)*
-![Formularz rejestracji – TestApp-Lab01](screenshots/module5-app-registration/26_app_registration_form_filled.png) *(screenshot 40)*
+![Formularz rejestracji aplikacji – pusty](screenshots/35.png)
+![Formularz rejestracji – TestApp-Lab01](screenshots/40.png)
 
 | Pole | Wartość |
 |---|---|
@@ -256,7 +248,7 @@ Grupa zawiera **2 użytkowników**, źródło: Chmura, typ członkostwa: Przypis
 
 ### Krok 2 – Zarejestrowana aplikacja
 
-![Przegląd zarejestrowanej aplikacji](screenshots/module5-app-registration/27_app_registered_overview.png) *(screenshot 41)*
+![Przegląd zarejestrowanej aplikacji](screenshots/41.png)
 
 | Pole | Wartość |
 |---|---|
@@ -269,20 +261,18 @@ Grupa zawiera **2 użytkowników**, źródło: Chmura, typ członkostwa: Przypis
 
 ### Krok 3 – Certyfikaty i klucze tajne (Client Secrets)
 
-![Certyfikaty – brak wpisów tajnych](screenshots/module5-app-registration/28_app_secrets_empty.png) *(screenshot 42)*
-![Certyfikaty – wpis tajny LabSecret](screenshots/module5-app-registration/29_app_secret_labsecret.png) *(screenshot 43)*
+![Certyfikaty – brak wpisów tajnych](screenshots/42.png)
+![Certyfikaty – wpis tajny LabSecret](screenshots/43.png)
 
-Utworzyłam wpis tajny klienta o nazwie **LabSecret** z datą wygaśnięcia 30.11.2026. Wartość klucza tajnego jest widoczna tylko bezpośrednio po utworzeniu – na screenshocie jest ona zanonimizowana (zasłonięta czerwonym prostokątem). To ważna praktyka bezpieczeństwa: klucz tajny należy skopiować i zabezpieczyć natychmiast.
+Utworzyłam wpis tajny klienta o nazwie **LabSecret** z datą wygaśnięcia 30.11.2026. Wartość klucza tajnego jest widoczna tylko bezpośrednio po utworzeniu – na screenshocie jest zanonimizowana. To ważna praktyka bezpieczeństwa: klucz należy skopiować i zabezpieczyć natychmiast po wygenerowaniu.
 
 ---
 
 ## 🔒 Moduł VI – Uwierzytelnianie MFA i SSPR
 
-> **Screenshoty:** `screenshots/module6-mfa-auth/`
-
 ### Krok 1 – Przegląd katalogów i MFA Phase 2
 
-![Directories + subscriptions](screenshots/module6-mfa-auth/30_portal_directories.png) *(screenshot 25)*
+![Directories + subscriptions](screenshots/25.png)
 
 W portalu Azure zobaczyłam oba katalogi oraz powiadomienie o **Mandatory Azure MFA Phase 2** – od października 2025 r. MFA wymagane dla Azure CLI, PowerShell, IaC, MSAL.
 
@@ -290,8 +280,8 @@ W portalu Azure zobaczyłam oba katalogi oraz powiadomienie o **Mandatory Azure 
 
 ### Krok 2 – Polityki metod uwierzytelniania
 
-![Authentication Methods Policies – katalog domyślny](screenshots/module6-mfa-auth/31_auth_methods_policies_default.png) *(screenshot 26)*
-![Authentication Methods Policies – Rododendron](screenshots/module6-mfa-auth/32_auth_methods_policies_rododendron.png) *(screenshot 39)*
+![Authentication Methods Policies – katalog domyślny](screenshots/26.png)
+![Authentication Methods Policies – Rododendron](screenshots/39.png)
 
 | Metoda | Włączona |
 |---|---|
@@ -309,7 +299,7 @@ W portalu Azure zobaczyłam oba katalogi oraz powiadomienie o **Mandatory Azure 
 
 ### Krok 3 – Włączenie SMS
 
-![Konfiguracja SMS](screenshots/module6-mfa-auth/33_sms_settings.png) *(screenshot 27)*
+![Konfiguracja SMS](screenshots/27.png)
 
 Włączyłam metodę **SMS** dla wszystkich użytkowników z rejestracją opcjonalną. SMS może być używany zarówno jako MFA jak i w Self-Service Password Reset (SSPR).
 
@@ -317,7 +307,7 @@ Włączyłam metodę **SMS** dla wszystkich użytkowników z rejestracją opcjon
 
 ### Krok 4 – Microsoft Authenticator – tryby uwierzytelniania
 
-![Microsoft Authenticator settings](screenshots/module6-mfa-auth/34_ms_authenticator_settings.png) *(screenshot 28)*
+![Microsoft Authenticator settings](screenshots/28.png)
 
 Sprawdziłam dostępne tryby: **Any**, **Passwordless**, **Push**. Pozostawiłam ustawienie *Any*, dając użytkownikom elastyczność wyboru.
 
@@ -325,15 +315,15 @@ Sprawdziłam dostępne tryby: **Any**, **Passwordless**, **Push**. Pozostawiłam
 
 ### Krok 5 – Samoobsługowe resetowanie hasła (SSPR)
 
-![SSPR – włączone dla wszystkich](screenshots/module6-mfa-auth/35_sspr_enabled_all.png) *(screenshot 38)*
+![SSPR – włączone dla wszystkich](screenshots/38.png)
 
-Włączyłam **SSPR (Self-Service Password Reset)** dla **wszystkich** użytkowników. Zapis zasad przebiegł pomyślnie (komunikat „Zapisano zasady resetowania hasła"). Dzięki temu użytkownicy mogą samodzielnie resetować hasła bez angażowania administratora.
+Włączyłam **SSPR** dla **wszystkich** użytkowników. Dzięki temu użytkownicy mogą samodzielnie resetować hasła bez angażowania administratora.
 
 ---
 
 ### Krok 6 – Dostęp warunkowy (Conditional Access)
 
-![Conditional Access Overview](screenshots/module6-mfa-auth/36_conditional_access_overview.png) *(screenshot 29)*
+![Conditional Access Overview](screenshots/29.png)
 
 Zapoznałam się z możliwościami Dostępu warunkowego. Przykładowe scenariusze:
 - logowanie spoza sieci firmowej → wymagane MFA
@@ -345,11 +335,9 @@ Tworzenie własnych polityk wymaga licencji **Entra ID Premium**.
 
 ## 🎭 Moduł VII – Role i administratorzy (RBAC)
 
-> **Screenshoty:** `screenshots/module7-roles/`
-
 ### Krok 1 – Przegląd wbudowanych ról
 
-![Lista ról administracyjnych](screenshots/module7-roles/37_roles_list.png) *(screenshot 30)*
+![Lista ról administracyjnych](screenshots/30.png)
 
 Przejrzałam pełną listę wbudowanych ról Entra ID. Moja aktualna rola: **Administrator globalny**.
 
@@ -357,7 +345,7 @@ Przejrzałam pełną listę wbudowanych ról Entra ID. Moja aktualna rola: **Adm
 
 ### Krok 2 – Wybór roli Administrator użytkowników
 
-![Wybór roli Administrator użytkowników](screenshots/module7-roles/38_role_user_administrator_select.png) *(screenshot 31)*
+![Wybór roli Administrator użytkowników](screenshots/31.png)
 
 Znalazłam rolę **Administrator użytkowników** – może zarządzać użytkownikami i grupami, resetować hasła dla administratorów z ograniczonymi uprawnieniami.
 
@@ -365,9 +353,9 @@ Znalazłam rolę **Administrator użytkowników** – może zarządzać użytkow
 
 ### Krok 3 – Dodanie przypisania
 
-![Puste przypisania roli](screenshots/module7-roles/39_role_assignments_empty.png) *(screenshot 32)*
-![Panel dodawania przypisania](screenshots/module7-roles/40_add_assignment_panel.png) *(screenshot 34)*
-![Potwierdzone przypisanie – Jan Kowalski](screenshots/module7-roles/41_role_assignment_confirmed.png) *(screenshot 33)*
+![Puste przypisania roli](screenshots/32.png)
+![Panel dodawania przypisania](screenshots/34.png)
+![Potwierdzone przypisanie – Jan Kowalski](screenshots/33.png)
 
 Wybrałam użytkownika **Jan Kowalski** i potwierdziłam przypisanie roli.
 
@@ -379,12 +367,12 @@ Wybrałam użytkownika **Jan Kowalski** i potwierdziłam przypisanie roli.
 
 ## 📊 Moduł VIII – Monitorowanie (Audit Logs i Sign-in Logs)
 
-> **Screenshoty:** `screenshots/module8-monitoring/`
-
 ### Krok 1 – Dzienniki inspekcji (Audit Logs)
 
-![Dzienniki inspekcji – grupowe](screenshots/module8-monitoring/42_audit_logs_groups.png) *(screenshot 36)*
-![Dzienniki inspekcji – szczegóły wpisu](screenshots/module8-monitoring/42b_audit_log_detail.png) *(screenshot 45)*
+![Dzienniki inspekcji – operacje grupowe](screenshots/36.png)
+![Dzienniki inspekcji – szczegóły wpisu](screenshots/37.png)
+![Dzienniki inspekcji – operacje aplikacji i grup](screenshots/46.png)
+![Dzienniki inspekcji – pełna lista](screenshots/47.png)
 
 W **Dziennikach inspekcji** widoczne są wszystkie operacje wykonywane w tenancie: tworzenie grup (`Add group`), dodawanie członków (`Add member to group`), operacje zarządzania aplikacjami (`Add application`, `Add service principal`), zdarzenia B2C Authentication oraz zarządzanie rolami (`Add member to role`).
 
@@ -394,8 +382,7 @@ Każdy wpis zawiera szczegóły: datę, typ działania, kategorię, status, adre
 
 ### Krok 2 – Zdarzenia logowania (Sign-in Logs)
 
-![Zdarzenia logowania](screenshots/module8-monitoring/43_signin_logs.png) *(screenshot 46)*
-![Zdarzenia logowania – pełny widok](screenshots/module8-monitoring/43b_signin_logs_full.png) *(screenshot 47)*
+![Zdarzenia logowania](screenshots/48.png)
 
 W **Zdarzeniach logowania** widoczne są interaktywne logowania użytkowników, m.in.:
 
