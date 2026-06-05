@@ -1,6 +1,6 @@
 # 🔐 Projekt: Konfiguracja Microsoft Entra ID – Środowisko zewnętrzne (External Tenant)
 
-> **Autor:** Sonia Paszkowiak  
+> **Autor:** SonnyMat 
 > **Technologia:** Microsoft Entra ID (dawniej Azure Active Directory)  
 > **Środowisko:** Microsoft Entra Admin Center  
 > **Status:** Zrealizowany  
